@@ -106,9 +106,9 @@ int main(int argc, char** argv)
         error++;
     }
 
+    timer.stop();
     num_test_insts = N;
 
-    timer.stop();
     
     // Report overall error out of all testing instances
     std::cout << "Number of test instances = " << num_test_insts << std::endl;
