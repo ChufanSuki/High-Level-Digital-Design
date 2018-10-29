@@ -39,6 +39,8 @@ void reshape(bit* input, bit* output);
 void dense(bit* input, bit*output, const bit* weight, const float* bias, int M, int N, bool use_relu);
 
 // Perform convolutional kernel
-void conv(bit input[MAX_FMAP], bit output[MAX_FMAP], const bit8_t threshold[MAX_FMAP], int M, int N, int I, int L);
+// void conv(bit input[MAX_FMAP], bit output[MAX_FMAP], const bit8_t threshold[MAX_FMAP], int M, int N, int I, int L);
+void conv_first(bit input[MAX_FMAP], bit output[MAX_FMAP], const bit8_t threshold[MAX_FMAP], int N, int I);
+void conv_second(bit input[MAX_FMAP], bit output[MAX_FMAP], const bit8_t threshold[MAX_FMAP], int N, int I);
 
 #endif

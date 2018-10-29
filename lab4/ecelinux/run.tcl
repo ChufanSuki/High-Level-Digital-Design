@@ -4,7 +4,7 @@
 # @brief: A Tcl script for synthesizing the baseline digit recongnition design.
 
 # Project name
-set hls_prj bnn.prj
+set hls_prj bnn-opt.prj
 
 # Open/reset the project
 open_project ${hls_prj} -reset
@@ -34,5 +34,5 @@ csim_design -O
 # Synthesize the design
 csynth_design
 # Co-simulate the design
-#cosim_design
+# cosim_design
 exit
